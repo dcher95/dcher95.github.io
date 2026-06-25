@@ -140,3 +140,33 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+/* link pills (publication links) */
+.lp {
+  display: inline-block;
+  padding: 2px 11px;
+  margin: 4px 5px 2px 0;
+  border: 1px solid #d7dde6;
+  border-radius: 999px;
+  background: #f3f5f8;
+  color: #1772d0;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.lp:hover {
+  background: #1772d0;
+  color: #fff;
+  border-color: #1772d0;
+  text-decoration: none;
+}
+.lp.soon {
+  background: #eceef2;
+  color: #9aa3b0;
+  border-color: #e3e6ec;
+  cursor: default;
+}
+.lp.soon:hover {
+  background: #eceef2;
+  color: #9aa3b0;
+  border-color: #e3e6ec;
+}
