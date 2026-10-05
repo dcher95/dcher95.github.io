@@ -170,3 +170,29 @@ span.highlight {
   color: #9aa3b0;
   border-color: #e3e6ec;
 }
+/* Best Paper / Oral Presentation callouts */
+strong.award {
+  color: #d01717;
+}
+
+/* Paper thumbnails pop out on hover. Hover is on .one because the empty
+   .two overlay sits on top of the image. Mouse/trackpad only.
+   The inline padding-top on each <img> is swapped for an equal margin while
+   hovered, so the white card hugs the figure instead of including that gap. */
+.one img {
+  position: relative;
+  transform-origin: right center;
+  transition: transform .25s ease-in-out, box-shadow .25s ease-in-out;
+}
+
+@media (hover: hover) {
+  .one:hover img {
+    padding-top: 0 !important;
+    margin-top: 35px;
+    transform: scale(1.7);
+    z-index: 10;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .22);
+  }
+}
